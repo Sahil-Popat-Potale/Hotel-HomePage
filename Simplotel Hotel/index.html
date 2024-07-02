@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Heritage Hotel in Jodhpur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="logo">Hotel Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms & Suites</a></li>
+                <li><a href="#dining">Dining</a></li>
+                <li><a href="#experiences">Spa</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Experience Royalty in the Heart of Jodhpur</h1>
+            <p>Luxury Meets Heritage at Sahil Hotel</p>
+            <a href="#booking" class="cta">Book Your Stay</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>A brief paragraph about the hotel’s history, its heritage, and its luxurious offerings.</p>
+        <img src="aboutUs1.jpg" alt="Palatial Interior">
+    </section>
+
+    <!-- Rooms & Suites Section -->
+    <section id="rooms" class="rooms-section">
+        <h2>Rooms & Suites</h2>
+        <p>A short introduction to the types of rooms and suites available, emphasizing comfort and luxury.</p>
+        <div class="image-carousel">
+            <img src="Luxurious suite.jfif" alt="Luxurious Suite">
+            <img src="heritage room.jfif" alt="Heritage Room">
+            <img src="deluxe room.jfif" alt="Deluxe Room">
+        </div>
+        <a href="#rooms-details" class="cta">Explore Our Rooms</a>
+    </section>
+
+    <!-- Dining -->
+    <section id="dining" class="dining-section">
+        <h2>Fine Dining</h2>
+        <p>Information about the dining options available, highlighting any special cuisine or dining experiences.</p>
+        <img src="dineing.jfif" alt="Dining Area">
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <h2>Book Your Stay</h2>
+        <form id="booking-form" action="booking-confirmation.html" method="POST">
+            <div class="form-dates">
+                <div class="form-group">
+                    <label for="checkin-date">Check-in Date</label>
+                    <input type="date" id="checkin-date" name="checkin-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout-date">Check-out Date</label>
+                    <input type="date" id="checkout-date" name="checkout-date" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="guests">Guests</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="room-type">Room Type</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="luxurious-suite">Luxurious Suite</option>
+                    <option value="heritage-room">Heritage Room</option>
+                    <option value="deluxe-room">Deluxe Room</option>
+                </select>
+            </div>
+            <button type="submit" class="cta">Book Now</button>
+        </form>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="experiences-section">
+        <h2>Unique Experiences</h2>
+        <p>Information about the unique experiences offered, such as spa treatments, local tours, and cultural events.</p>
+        <img src="dine.jfif" alt="Spa Treatment or Cultural Event">
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="contact-info">
+            <p>Address: [Hotel Address]</p>
+            <p>Phone: +91 8208634897</p>
+            <p>Email: testhotel@gmail.com</p>
+        </div>
+        <div class="social-media">
+            <a href="#facebook">Facebook</a>
+            <a href="#twitter">Twitter</a>
+            <a href="#instagram">Instagram</a>
+        </div>
+        <div class="newsletter">
+            <h3>Sign up for our Newsletter</h3>
+            <form action="#subscribe">
+                <input type="email" placeholder="Your Email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <!-- Booking Confirmation Modal -->
+    <div id="booking-confirmation" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Booking Confirmation</h2>
+            <p>Thank you for booking with us! Your reservation has been confirmed.</p>
+            <p>We look forward to hosting you at [Hotel Name] in Jodhpur.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
